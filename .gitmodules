@@ -1,0 +1,40 @@
+[submodule "plugins/dsh-lamplit"]
+	path = plugins/dsh-lamplit
+	url = https://github.com/hypo-Z/dsh-lamplit.git
+	branch = main
+[submodule "plugins/dsh-portfolio"]
+	path = plugins/dsh-portfolio
+	url = https://github.com/hypo-Z/dsh-portfolio.git
+	branch = main
+[submodule "plugins/dsh-bilibili-multiview"]
+	path = plugins/dsh-bilibili-multiview
+	url = https://github.com/hypo-Z/dsh-bilibili-multiview.git
+	branch = main
+[submodule "plugins/dsh-bili-widget"]
+	path = plugins/dsh-bili-widget
+	url = https://github.com/hypo-Z/dsh-bili-widget.git
+	branch = main
+[submodule "plugins/dsh-dream-skin"]
+	path = plugins/dsh-dream-skin
+	url = https://github.com/hypo-Z/dsh-dream-skin.git
+	branch = main
+[submodule "plugins/dsh-nav-grid"]
+	path = plugins/dsh-nav-grid
+	url = https://github.com/hypo-Z/dsh-nav-grid.git
+	branch = main
+[submodule "plugins/dsh-fork-sync"]
+	path = plugins/dsh-fork-sync
+	url = https://github.com/hypo-Z/dsh-fork-sync.git
+	branch = main
+[submodule "plugins/dsh-stock-bar"]
+	path = plugins/dsh-stock-bar
+	url = https://github.com/hypo-Z/dsh-stock-bar.git
+	branch = dev-1.11
+[submodule "plugins/dsh-music-panel"]
+	path = plugins/dsh-music-panel
+	url = https://github.com/hypo-Z/dsh-music-panel.git
+	branch = local
+[submodule "plugins/dsh-pet"]
+	path = plugins/dsh-pet
+	url = https://github.com/hypo-Z/dsh-pet.git
+	branch = local

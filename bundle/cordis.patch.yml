@@ -1,0 +1,56 @@
+# Hypo's DSH plugins in one bundle.
+#
+# Each row points at either a submodule checkout under ../plugins or an npm package.
+# Row ids are stable and unique; they do not collide with the official profile rows.
+- insert:
+    - id: hypo-lamplit
+      name: dsh-lamplit
+      config: {}
+    - id: hypo-pet
+      name: dsh-pet
+      config: {}
+    - id: hypo-stock-bar
+      name: dsh-stock-bar
+      config: {}
+    - id: hypo-portfolio
+      name: dsh-portfolio
+      config: {}
+    - id: hypo-music
+      name: dsh-music-panel
+      config: {}
+    - id: hypo-bilibili-multiview
+      name: dsh-bilibili-multiview
+      config: {}
+    - id: hypo-bili-widget
+      name: "@dsh-external/dsh-bili-widget"
+      config: {}
+    - id: hypo-dream-skin
+      name: dsh-dream-skin
+      config: {}
+    - id: hypo-nav-grid
+      name: dsh-nav-grid
+      config: {}
+    - id: hypo-fork-sync
+      name: dsh-fork-sync
+      config: {}
+    - id: hypo-market
+      name: dshmarket
+      config: {}
+    - id: hypo-better-sidebar
+      name: dsh-better-sidebar
+      config: {}
+    - id: hypo-git-graph
+      name: "@linxin666/dsh-client-ui-git-graph"
+      config: {}
+    - id: hypo-pixel-ui
+      name: dsh-pixel-ui
+      config: {}
+    - id: hypo-context
+      name: dsh-context
+      config: {}
+    - id: hypo-game-skins
+      name: dsh-game-skins
+      config: {}
+    - id: hypo-github-flow
+      name: dsh-github-flow
+      config: {}

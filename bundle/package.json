@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugins-hypo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hypo's DSH plugin set: lamplit reader, desktop pet, stock bar, portfolio, music, Bilibili multiview, skins and utilities in one bundle.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "dsh-lamplit": "file:../plugins/dsh-lamplit",
+    "dsh-pet": "file:../plugins/dsh-pet",
+    "dsh-stock-bar": "file:../plugins/dsh-stock-bar",
+    "dsh-portfolio": "file:../plugins/dsh-portfolio",
+    "dsh-music-panel": "file:../plugins/dsh-music-panel",
+    "dsh-bilibili-multiview": "file:../plugins/dsh-bilibili-multiview",
+    "@dsh-external/dsh-bili-widget": "file:../plugins/dsh-bili-widget",
+    "dsh-dream-skin": "file:../plugins/dsh-dream-skin",
+    "dsh-nav-grid": "file:../plugins/dsh-nav-grid",
+    "dsh-fork-sync": "file:../plugins/dsh-fork-sync",
+    "dshmarket": "^1.66.6",
+    "dsh-better-sidebar": "^0.24.1",
+    "@linxin666/dsh-client-ui-git-graph": "0.4.4",
+    "dsh-pixel-ui": "1.13.2",
+    "dsh-context": "^0.85.1",
+    "dsh-game-skins": "0.3.4",
+    "dsh-github-flow": "^0.7.1"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ]
+}
