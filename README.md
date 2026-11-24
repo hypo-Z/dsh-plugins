@@ -76,6 +76,18 @@ cd dsh-plugins
 
 ---
 
+**English**
+
+```bash
+git clone https://github.com/hypo-Z/dsh-plugins.git
+cd dsh-plugins
+./scripts/init-submodules.sh
+```
+
+Then in DSH: **Plugins → Add plugin → pick this repo's `bundle` directory**.
+Large submodules (pet 76MB, music 50MB) may need retries on a slow GitHub connection; avoid
+`--depth 1/--shallow-submodules` because stock-bar's `dev-1.11` is not its default branch.
+
 ## 更新 / Update
 
 **更新某个插件到上游**
