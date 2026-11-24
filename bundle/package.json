@@ -25,13 +25,13 @@
     "dsh-dream-skin": "file:../plugins/dsh-dream-skin",
     "dsh-nav-grid": "file:../plugins/dsh-nav-grid",
     "dsh-fork-sync": "file:../plugins/dsh-fork-sync",
-    "dshmarket": "^1.66.6",
-    "dsh-better-sidebar": "^0.24.1",
+    "dshmarket": "1.66.6",
+    "dsh-better-sidebar": "0.24.1",
     "@linxin666/dsh-client-ui-git-graph": "0.4.4",
     "dsh-pixel-ui": "1.13.2",
-    "dsh-context": "^0.85.1",
+    "dsh-context": "0.85.1",
     "dsh-game-skins": "0.3.4",
-    "dsh-github-flow": "^0.7.1"
+    "dsh-github-flow": "0.7.1"
   },
   "files": [
     "index.js",
