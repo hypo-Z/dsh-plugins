@@ -50,15 +50,22 @@ dsh-plugins/
 ## 安装 / Install
 
 ```bash
-git clone --recurse-submodules https://github.com/hypo-Z/dsh-plugins.git
+git clone https://github.com/hypo-Z/dsh-plugins.git
+cd dsh-plugins
+./scripts/init-submodules.sh      # 带重试的 submodule 初始化
 ```
 
 然后在 DSH：**插件 → 添加插件 → 选择本仓库的 `bundle` 目录**。
 
-> 已 clone 但没带 submodule 时：
+> 大仓库（pet 76MB / music 50MB）在 GitHub 网络不稳时可能失败，脚本会重试 3 次；
+> 仍失败时可单独初始化：
 > ```bash
-> git submodule update --init --recursive
+> git submodule update --init plugins/dsh-lamplit
+> git submodule update --init plugins/dsh-pet
 > ```
+>
+> **不要**用 `--depth 1/--shallow-submodules`：stock-bar 的 `dev-1.11` 不是默认分支，
+> 浅克隆会检出成 `main`，与本仓库记录的提交不一致。
 
 **注意 / Warning**：`bundle` 的 patch 合并了所有插件的行。如果当前 profile 已经单独装了这些插件，不要同时安装，否则会重复加载。迁移步骤：
 
