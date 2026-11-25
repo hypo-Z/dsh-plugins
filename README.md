@@ -21,7 +21,17 @@ My DeepSeek Harness plugin set. Every plugin keeps its own repository (upstream 
 | 导航宫格 | [dsh-nav-grid](https://github.com/hypo-Z/dsh-nav-grid) | 本地自研 | `main` |
 | 上游同步 | [dsh-fork-sync](https://github.com/hypo-Z/dsh-fork-sync) | 本地自研 | `main` |
 
-另有 7 个 npm 插件作为依赖锁定版本：`dshmarket`、`dsh-better-sidebar`、`@linxin666/dsh-client-ui-git-graph`、`dsh-pixel-ui`、`dsh-context`、`dsh-game-skins`、`dsh-github-flow`。
+另有 7 个 npm 插件作为依赖锁定版本：
+
+| 插件 | npm 包 | 版本 | 作用 |
+|---|---|---|---|
+| 插件市场 | dshmarket | 1.66.6 | 侧边栏插件市场 |
+| 增强侧边栏 | dsh-better-sidebar | 0.24.1 | 文件树/编辑器/变更/任务 |
+| Git 图 | @linxin666/dsh-client-ui-git-graph | 0.4.4 | 分支选择与提交图 |
+| 像素皮肤 | dsh-pixel-ui | 1.13.2 | 像素风主题 |
+| 上下文洞察 | dsh-context | 0.85.1 | 上下文看板 |
+| 游戏皮肤 | dsh-game-skins | 0.3.4 | Minecraft / 无尽的拉格朗日 |
+| GitHub 工具 | dsh-github-flow | 0.7.1 | 侧边栏「GitHub」页 + PR/Issue/CI 工具 |
 
 `local` / `dev-1.11` 分支承载与上游分叉的本地改动，`main` 保持与上游一致，方便继续同步。
 
