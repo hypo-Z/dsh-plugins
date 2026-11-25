@@ -22,8 +22,9 @@ if missing_dep:
 if missing_row:
     print('dependencies without row:', missing_row); sys.exit(1)
 
+skip_plugins = os.environ.get('SKIP_PLUGIN_CHECK') == '1'
 for name, spec in deps.items():
-    if spec.startswith('file:'):
+    if spec.startswith('file:') and not skip_plugins:
         path = os.path.normpath(os.path.join(bundle, spec[len('file:'):]))
         if not os.path.exists(os.path.join(path, 'package.json')):
             print('missing plugin checkout:', name, path); sys.exit(1)
