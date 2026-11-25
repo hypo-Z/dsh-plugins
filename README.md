@@ -98,6 +98,33 @@ Then in DSH: **Plugins → Add plugin → pick this repo's `bundle` directory**.
 Large submodules (pet 76MB, music 50MB) may need retries on a slow GitHub connection; avoid
 `--depth 1/--shallow-submodules` because stock-bar's `dev-1.11` is not its default branch.
 
+## 打包 / Package
+
+不克隆仓库也能安装：构建一个内置全部插件的 tarball。
+
+```bash
+./scripts/init-submodules.sh     # 首次需要
+./scripts/package.sh             # 产出 dist/dsh-plugins-hypo-<version>.tgz
+```
+
+安装：
+
+```bash
+dsh plugin --profile desktop add ./dist/dsh-plugins-hypo-0.1.0.tgz
+```
+
+打 tag（`v0.1.0`）会自动触发 GitHub Actions，构建 tarball 并上传到 Release。
+
+Build a self-contained tarball (plugins vendored inside) and install it without cloning:
+
+```bash
+./scripts/init-submodules.sh
+./scripts/package.sh
+dsh plugin --profile desktop add ./dist/dsh-plugins-hypo-0.1.0.tgz
+```
+
+Tags matching `v*` trigger the `package` workflow, which builds the tarball and attaches it to a GitHub Release.
+
 ## 更新 / Update
 
 **更新某个插件到上游**
