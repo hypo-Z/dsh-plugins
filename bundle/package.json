@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugins-hypo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Hypo's DSH plugin set: lamplit reader, desktop pet, stock bar, portfolio, music, Bilibili multiview, skins and utilities in one bundle.",
