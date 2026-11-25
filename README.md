@@ -136,7 +136,11 @@ DSH 插件管理器里移除旧的 `dsh-plugins` bundle，再重新添加一次 
 
 ## 许可 / License
 
-各插件保留其原始许可证；本仓库仅做汇总与配置。
+本仓库的汇总层（`bundle/`、`scripts/`、文档）以 MIT 发布，见 [LICENSE](LICENSE)；
+每个插件保留其原始许可证，第三方清单见 [NOTICE.md](NOTICE.md)。
+
+The aggregation layer (`bundle/`, `scripts/`, docs) is MIT — see [LICENSE](LICENSE).
+Each plugin keeps its own license; see [NOTICE.md](NOTICE.md).
 
 - 上游 fork 的插件遵循各自 upstream 的 LICENSE（dsh-lamplit、dsh-stock-bar、dsh-portfolio、dsh-music-panel、dsh-bilibili-multiview、dsh-bili-widget、dsh-dream-skin、dsh-pet）
 - 本地自研的 dsh-nav-grid、dsh-fork-sync 由我维护
