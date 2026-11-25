@@ -39,6 +39,8 @@ The `local` / `dev-1.11` branches carry changes that diverged from upstream; `ma
 
 ---
 
+安装与排查见 **[docs/INSTALL.md](docs/INSTALL.md)**。Common issues and migration steps are documented there.
+
 ## 目录结构 / Layout
 
 ```

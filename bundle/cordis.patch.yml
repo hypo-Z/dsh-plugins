@@ -27,6 +27,7 @@
       config: {}
     - id: "bili-widget"
       name: "@dsh-external/dsh-bili-widget"
+      disabled: true
       config: {}
     - id: "dream-skin"
       name: "dsh-dream-skin"

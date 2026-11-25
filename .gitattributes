@@ -1,0 +1,13 @@
+# Keep large binary plugin assets out of diffs and language stats.
+plugins/**/*.mp4 binary
+plugins/**/*.webm binary
+plugins/**/*.png binary
+plugins/**/*.jpg binary
+plugins/**/*.jpeg binary
+plugins/**/*.webp binary
+plugins/**/*.gif binary
+plugins/**/*.mp3 binary
+plugins/**/*.wav binary
+plugins/**/*.ttf binary
+plugins/**/*.otf binary
+plugins/** linguist-vendored

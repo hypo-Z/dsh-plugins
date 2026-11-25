@@ -25,6 +25,9 @@ PLUGINS = [
     ("dsh-fork-sync", "plugins/dsh-fork-sync/cordis.patch.yml"),
 ]
 
+# Rows that ship disabled by default (users can enable them in the plugin manager).
+DISABLED_BY_DEFAULT = {"bili-widget"}
+
 NPM_ROWS = [
     ("hypo-market", "dshmarket"),
     ("hypo-better-sidebar", "dsh-better-sidebar"),
@@ -49,6 +52,8 @@ def main():
                 seen.add(rid)
             row = dict(row)
             row.setdefault("config", {})
+            if row.get("id") in DISABLED_BY_DEFAULT:
+                row["disabled"] = True
             rows.append(row)
 
     for name, rel in PLUGINS:
@@ -73,6 +78,8 @@ def main():
     for row in rows:
         out.append("    - id: " + json.dumps(row["id"]))
         out.append("      name: " + json.dumps(row["name"]))
+        if row.get("disabled") is True:
+            out.append("      disabled: true")
         cfg = row.get("config") or {}
         if cfg:
             out.append("      config:")
